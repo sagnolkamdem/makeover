@@ -1,10 +1,14 @@
-# Getting Started with Create React App
+# A simple showcase site for a very atypical beauty salon
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This application was developed with react, tailwind.
 
-## Available Scripts
+## How can you run the project using SSH
 
-In the project directory, you can run:
+**clone using SSH and move into project `git clone git@github.com:sagnolkamdem/makeover.git && cd makeover`**
+
+**Install all dependencies `npm install`**
+
+**Install all dependencies `npm run start`**
 
 ### `npm start`
 
