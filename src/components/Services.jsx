@@ -1,6 +1,6 @@
 const Services = () => {
     return ( 
-        <div className="relative w-full h-full flex items-end justify-end">
+        <div className="relative flex items-end justify-end w-screen h-screen overflow-hidden">
             <div className="w-[70%] h-[75%] bg-gradient-to-tl from-white to-pink-100"></div>
             <div className="absolute flex flex-col gap-4 inset-0 px-[5%] py-[1%]">
                 <h3 className="text-pink-500 text-2xl font-semibold uppercase">Our services</h3>

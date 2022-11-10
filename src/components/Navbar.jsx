@@ -1,5 +1,6 @@
 import { Transition } from '@headlessui/react'
 import { useState } from 'react'
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
 
@@ -22,7 +23,7 @@ const Navbar = () => {
     }
 
     return ( 
-        <nav className='relative w-full px-[8%] pt-[30px] flex justify-between'>
+        <nav className='relative w-full px-[8%] pt-[30px] flex justify-between bg-white items-center lg:mb-6'>
 
 
             {showing ? <div className="fixed lg:hidden inset-0 top-[80px]  bg-white border-t-2 border-pink-500">
@@ -39,11 +40,10 @@ const Navbar = () => {
                     <div className="flex gap-8 w-80% h-80% flex-col p-5 bg-white overflow-hidden" role="menu" onClick={() => {
                         reset();
                     }}>
-                        <a href="#homepage" className="block text-pink-500 text-2xl font-semibold uppercase" role="menuitem" tabIndex="-1" id="user-menu-item-0">Home</a>
-                        <a href="#best" className="block text-pink-500 text-2xl font-semibold uppercase" role="menuitem" tabIndex="-1" id="user-menu-item-0">Best Sellers</a>
-                        <a href="#services" className="block text-pink-500 text-2xl font-semibold uppercase" role="menuitem" tabIndex="-1" id="user-menu-item-0">Our services</a>
-                        <a href="#about" className="block text-pink-500 text-2xl font-semibold uppercase" role="menuitem" tabIndex="-1" id="user-menu-item-0">About us</a>
-                        <a href="#footer" className="block text-pink-500 text-2xl font-semibold uppercase" role="menuitem" tabIndex="-1" id="user-menu-item-0">Contact us</a>
+                        {/* <Link to="/" className="block text-pink-500 text-2xl font-semibold uppercase" role="menuitem" tabIndex="-1" id="user-menu-item-0">Home</Link> */}
+                        {/* <a href="#" className="block text-pink-500 text-2xl font-semibold uppercase" role="menuitem" tabIndex="-1" id="user-menu-item-0">Our services</a>
+                        <a href="#" className="block text-pink-500 text-2xl font-semibold uppercase" role="menuitem" tabIndex="-1" id="user-menu-item-0">About us</a>
+                        <a href="#footer" className="block text-pink-500 text-2xl font-semibold uppercase" role="menuitem" tabIndex="-1" id="user-menu-item-0">Contact us</a> */}
                     </div>
 
                 </Transition>
@@ -55,19 +55,19 @@ const Navbar = () => {
             </div>
             
             <div className="lg:flex gap-14 items-center hidden">
-                <a href="#homepage" className="text-slate-500 visited:text-slate-800">
+                {/* <Link to="/" className="text-slate-500 visited:text-slate-800 font-medium text-base capitalize">
+                    Home
+                </Link> */}
+                <a href="#" className="text-slate-500 visited:text-slate-800">
                     <span className='font-medium text-base capitalize'>Home</span>
                 </a>
-                <a href="#best" className="text-slate-500 visited:text-slate-800">
-                    <span className='font-medium text-base capitalize'>Best sellers</span>
-                </a>
-                <a href="#services" className="text-slate-500 visited:text-slate-800">
+                <a href="#" className="text-slate-500 visited:text-slate-800">
                     <span className='font-medium text-base capitalize'>Our Services</span>
                 </a>
-                <a href="#about" className="text-slate-500 visited:text-slate-800">
+                <a href="#" className="text-slate-500 visited:text-slate-800">
                     <span className='font-medium text-base capitalize'>About us</span>
                 </a>
-                <a href="#footer" className="text-slate-500 visited:text-slate-800">
+                <a href="#" className="text-slate-500 visited:text-slate-800">
                     <span className='font-medium text-base capitalize'>Contact us</span>
                 </a>
             </div>
