@@ -1,6 +1,6 @@
 import { Transition } from '@headlessui/react'
 import { useState } from 'react'
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 
 const Navbar = () => {
 
@@ -44,6 +44,7 @@ const Navbar = () => {
                         {/* <a href="#" className="block text-pink-500 text-2xl font-semibold uppercase" role="menuitem" tabIndex="-1" id="user-menu-item-0">Our services</a>
                         <a href="#" className="block text-pink-500 text-2xl font-semibold uppercase" role="menuitem" tabIndex="-1" id="user-menu-item-0">About us</a>
                         <a href="#footer" className="block text-pink-500 text-2xl font-semibold uppercase" role="menuitem" tabIndex="-1" id="user-menu-item-0">Contact us</a> */}
+                        <NavLink to={"/"} className={({})}>Home</NavLink>
                     </div>
 
                 </Transition>
@@ -55,21 +56,8 @@ const Navbar = () => {
             </div>
             
             <div className="lg:flex gap-14 items-center hidden">
-                {/* <Link to="/" className="text-slate-500 visited:text-slate-800 font-medium text-base capitalize">
-                    Home
-                </Link> */}
-                <a href="#" className="text-slate-500 visited:text-slate-800">
-                    <span className='font-medium text-base capitalize'>Home</span>
-                </a>
-                <a href="#" className="text-slate-500 visited:text-slate-800">
-                    <span className='font-medium text-base capitalize'>Our Services</span>
-                </a>
-                <a href="#" className="text-slate-500 visited:text-slate-800">
-                    <span className='font-medium text-base capitalize'>About us</span>
-                </a>
-                <a href="#" className="text-slate-500 visited:text-slate-800">
-                    <span className='font-medium text-base capitalize'>Contact us</span>
-                </a>
+                <NavLink to={"/"} className={({isActive}) => isActive ? 'text-slate-900 font-medium text-base capitalize' : 'text-slate-400 font-medium text-base capitalize'}>Home</NavLink>
+                <NavLink to={"/services"} className={({isActive}) => isActive ? 'text-slate-900 font-medium text-base capitalize' : 'text-slate-400 font-medium text-base capitalize'}>Our Services</NavLink>
             </div>
 
             <div className="flex lg:hidden cursor-pointer items-center" onClick={() => {

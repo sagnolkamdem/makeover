@@ -11,7 +11,8 @@ import ServicesPage from "../pages/ServicesPage";
 
 function App() {
   return (
-    <main>
+
+    <BrowserRouter>
 
       <section className="flex flex-col w-screen">
         <div className="mb-2">
@@ -19,23 +20,20 @@ function App() {
         </div>
       </section>
 
-      <BrowserRouter>
+      <Routes>
 
-        <Routes>
+        <Route path="/services" element={<ServicesPage />} />
 
-          <Route path="/services" element={<ServicesPage />} />
+        <Route path="/" element={<Accueil />} />
 
-          <Route path="/" element={<Accueil />} />
+      </Routes>
 
-        </Routes>
-
-      </BrowserRouter>
-      
       <section className="w-screen h-screen overflow-hidden" id="footer">
         <Footer />
       </section>
 
-    </main>
+    </BrowserRouter>
+
   );
 }
 

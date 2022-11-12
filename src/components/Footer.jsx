@@ -1,4 +1,19 @@
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
 const Footer = () => {
+
+    
+    const options = {
+        margin: 30,
+        items: 2,
+        autoplay: true,
+        smartSpeed: 1000,
+        loop: true,
+    };
+
+
     return ( 
         <footer className="w-full h-full grid grid-rows-2 gap-6">
 
@@ -9,9 +24,7 @@ const Footer = () => {
                     <span className="text-pink-500">   Makeover</span>
                 </h3>
 
-                <div className="grid grid-cols-5 flex-1 gap-5 px-6">
-                    <div className="bg-[url('https://images.unsplash.com/photo-1567131308523-383d0fea9671?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80')] bg-cover bg-no-repeat col-span-1 last-of-type:rounded-tr-none last-of-type:rounded-br-none first-of-type:rounded-tl-none first-of-type:rounded-bl-none rounded-xl bg-pink-50"></div>
-                    <div className="bg-[url('https://images.unsplash.com/photo-1567131308523-383d0fea9671?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80')] bg-cover bg-no-repeat col-span-1 last-of-type:rounded-tr-none last-of-type:rounded-br-none first-of-type:rounded-tl-none first-of-type:rounded-bl-none rounded-xl bg-pink-50"></div>
+                <div className="grid grid-cols-3 flex-1 gap-5 px-6">
                     <div className="bg-[url('https://images.unsplash.com/photo-1567131308523-383d0fea9671?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80')] bg-cover bg-no-repeat col-span-1 last-of-type:rounded-tr-none last-of-type:rounded-br-none first-of-type:rounded-tl-none first-of-type:rounded-bl-none rounded-xl bg-pink-50"></div>
                     <div className="bg-[url('https://images.unsplash.com/photo-1567131308523-383d0fea9671?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80')] bg-cover bg-no-repeat col-span-1 last-of-type:rounded-tr-none last-of-type:rounded-br-none first-of-type:rounded-tl-none first-of-type:rounded-bl-none rounded-xl bg-pink-50"></div>
                     <div className="bg-[url('https://images.unsplash.com/photo-1567131308523-383d0fea9671?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80')] bg-cover bg-no-repeat col-span-1 last-of-type:rounded-tr-none last-of-type:rounded-br-none first-of-type:rounded-tl-none first-of-type:rounded-bl-none rounded-xl bg-pink-50"></div>
